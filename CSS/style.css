@@ -41,8 +41,9 @@ nav ul {
   position: relative;
   color: #7C91A9;
   font-size: 96px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: 'Playfair Display', serif;
+  font-style: normal;
 }
 .container .text.first-text {
   color: #EDEDED;
