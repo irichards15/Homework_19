@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- <script>
+            ScrollReveal({ reset: true });
+        </script> -->
+    </head>
+
+    <body>
+
+        <header class="navigation">
+            <div class="inline-block logo">
+    
+            </div>
+
+            <nav class="inline-block">
+                <ul>
+                    <li class="navItem">Work</li>
+                    <li class="navItem">About</li>
+                    <li class="navItem">Contact</li>
+                    <li class="navItem">Resume</li>
+                    <li class="folio">Folio '23</li>
+                </ul>
+            </nav>
+        </header>
+
+            <!-- <section class="name">
+                <h1 id="name">Ian Richrds</h1>
+                <h1 id="designer">- UX designer</h1>
+                <h1 id="analyst">& data analyst.</h1>
+            </section> -->
+            <!-- <h1 id="name">Ian Richards</h1> -->
+            <div class="container">
+                <span class="text first-text">I'm&nbsp;</span>
+                <span class="text sec-text">Ian Richards</span>
+            </div>
+        
+            <script>
+                const text = document.querySelector(".sec-text");
+        
+                const textLoad = () => {
+                    setTimeout(() => {
+                        text.textContent = "Ian Richards";
+                    }, 0);
+                    setTimeout(() => {
+                        text.textContent = "a UX Designer";
+                    }, 4000);
+                    setTimeout(() => {
+                        text.textContent = "a Data Analyst";
+                    }, 8000); //1s = 1000 milliseconds
+                }
+        
+                textLoad();
+                setInterval(textLoad, 12000);
+            </script>    
+
+            <section class="heroIMG">
+                <div class="content">
+                    <img class="bioIMG" src="./images/chicago_0076 1.png" alt="A Photo of Me!">
+                    <p class="bioTopLine">Hey! I’m Ian. A Chicago-based Data Analyst turned UX Designer.</p>
+                    <p class="bioSecondLine">I’m passionate about bringing data into design by making evidence-backed, user-centric decisions.</p>
+                    <p class="bioThirdLine">I use empathy and a tireless curiosity to craft experiences and design intuitive solutions.</p>
+                    <!-- <button>Download Resume</button> -->
+                </div>
+            </section>
+
+            <hr class="rounded">
+
+            <!-- My Work Section Constructed using CSS Grid -->
+            <section class="myWork">
+                <h1>My Work</h1>
+                <div class="workGrid">
+
+                    <div class="workItem1">
+                        <img class="worldlyIMG" src="./images/Worldly.png" alt="worldy image" width="auto" height="100%">
+                        <h2 class="worldlyH2">A travel app for everyone</h2>
+                        <p class="worldlyP">Worldly is a social networking app for the well-connected traveler who wants to discover, save and share all their favorite places while on the move.</p>
+                    </div>
+
+                    <div class="workItem2">
+                        <img class="stonewallIMG" src="./images/Stonewall.png" alt="stonewall image" width="auto" height="100%">
+                        <h2 class="stonewallH2">A new design system for a community non-profit</h2>
+                        <p class="stonewallP">Stonewall Columbus is a non-profit LGBTQ+ community center located in Columbus, OH. My team and I redesigned their website to improve user experience and increase community engagement.</p>
+                    </div>
+
+                    <div class="workItem3">
+                        <img class="dhsIMG" src="./images/DHS.png" alt="DHS image" width="auto" height="100%">
+                        <h2 class="dhsH2">Navigation overhaul for a government agency</h2>
+                        <p class="dhsP">I redesigned the primary navigation system and site map for DHS.gov to streamline user experience while searching through their never-ending content.</p>
+                    </div>
+                    
+                    <p class="connect">Interested in working together? Let's connect.</p>
+
+                    <div class="icons">
+                        <ul>
+                            <li><img src="./images/Group 13email.png" alt="email logo"></li>
+                            <li><img src="./images/Group 12linkedin.png" alt="linkedin logo"></li>
+                            <li><img src="./images/insta.png" alt="insta logo"></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="rounded" id="footer">
+            
+            <footer class="footer">
+                <ul>
+                    <li class="copyright">C 2023</li>
+                    <li class="footerNav">Work</li>
+                    <li class="footerNav">About</li>
+                    <li class="footerNav">Contact</li>
+                    <li class="footerNav">Resume</li>
+                </ul>
+            </footer>
+            <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+            <script src="./JS/index.js"></script>
+    </body>
+</html>
